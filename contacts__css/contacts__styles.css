@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, input, button {
+    font-family: 'Product Sans',Arial,sans-serif;
+    font-size: 22px;
+}
+
+.contacts__logo {
+    padding: 10px 20px;
+    color: aliceblue;
+}
+
+.contacts__logo span {
+    filter: invert(100%);
+}
+
+.contacts__form, 
+.contacts__content {
+    margin: 30px;
+    margin-bottom: 20px;
+}
+
+.contacts__title {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: dodgerblue;
+}
+
+.contacts__input {
+    margin-bottom: 15px;
+    width: 52%;
+    height: 35px;
+    padding: 7px;    
+
+    border: 2px solid dodgerblue;
+    border-radius: 10px;
+}
+
+.contacts__btnAdd,
+.contacts__btnRemove { 
+    max-width: 28.7%;
+    margin-left: 30px;
+    padding: 7px 70px;
+
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;  
+    font-weight: bold; 
+    
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .6;
+}
+
+.gradient,
+.gradient:before {
+    background:dodgerblue;
+    background:-moz-linear-gradient(45deg,dodgerblue 0, aqua 100%);
+    background:-webkit-gradient(left bottom,right top,color-stop(0,dodgerblue),color-stop(100%,aqua));
+    background:-webkit-linear-gradient(45deg,dodgerblue 0,aqua 100%);
+    background:-o-linear-gradient(45deg,dodgerblue 0,aqua 100%);
+    background:-ms-linear-gradient(45deg,dodgerblue 0,aqua 100%);
+    background:linear-gradient(45deg,dodgerblue 0,aqua 100%);
+}
+
+/* ---------------- Contacts List  ----------------*/
+.contacts_items {
+    list-style: none;
+}
+
+.cnctct__info {
+    background-color: aliceblue;
+    padding: 2.5%;
+    box-shadow: 0 0 10px dodgerblue;
+    border-radius: 15px;
+    margin: 25px 0;
+
+    max-width: 35%;
+    clear: both;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cnctct__info:hover{
+    box-shadow: 0 0 10px aqua;
+    cursor: pointer;
+}
+
+.contacts__btnRemove {
+    
+    padding: 5px 15px;    
+    align-self: flex-end;
+}
